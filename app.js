@@ -3,6 +3,8 @@ var argv = require('optimist')
 	.demand(['p'])
 	.argv;
 var util = require('./lib/util/environ');
-var plugin_loader = require('lib/plugin_loader/loader');
+var loader = require('./lib/plugin_loader/loader');
 
-plugin_loader.load(argv.p);
+var commands = loader.load(argv.p);
+
+logger.debug(JSON.stringify(commands));
