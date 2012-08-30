@@ -1,6 +1,14 @@
-{
-	"add": {
-		"type": "module",
-		"name": "Binary Search"
+[
+	{
+		"add": {
+			"type": "module",
+			"name": "Binary Search"
+		}
+	},
+	{
+		"sorting": {
+			"type": "module",
+			"name": "Binary Search"
+		}
 	}
-}
+]
