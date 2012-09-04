@@ -1,12 +1,14 @@
 [
 	{
-		"add": {
+		"name": "add",
+		"params": {
 			"type": "module",
 			"name": "Binary Search"
 		}
 	},
 	{
-		"sorting": {
+		"name": "sorting",
+		"params":	{
 			"type": "module",
 			"name": "Binary Search"
 		}
