@@ -6,7 +6,7 @@ module.exports = {
 
 function intProcess(command, cb) {
 	logger.debug("Processing command [" + command.name + "]");
-	process[command.name](command.params, cb);
+	process1[command.name](command.params, cb);
 	cb();
 }
 

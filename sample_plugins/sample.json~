@@ -19,13 +19,13 @@
 		"params": {
 			"type": "module",
 			"name": "Quicksort",
-			"description":[
-				{"text":"t1"},
-				{"diagram":"d1"},
-				{"text":"t2"},
-				{"code":"c1"},
-				{"explanation":"e1"}
-			],
+			"description":{
+				"text":"t1",
+				"diagram":"d1",
+				"text":"t2",
+				"code":"c1",
+				"explanation":"e1"
+			},
 			"category": "algorithm, sorting, nlog(n)"
 		}
 	}
