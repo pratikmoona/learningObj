@@ -9,9 +9,10 @@
 				{"diagram":"d1"},
 				{"text":"t2"},
 				{"code":"c1"},
-				{"explanation":"e1"}
+				{"explanation":"e1"},
+				{"excercise":"ex1"}
 			],
-			"category": "algorithm, search, sorted data, log(n)"
+			"tags": "algorithm, search, sorted data, log(n)"
 		}
 	},
 	{
@@ -26,7 +27,7 @@
 				{"code":"c1"},
 				{"explanation":"e1"}
 			],
-			"category": "algorithm, sorting, nlog(n)"
+			"tags": "algorithm, sorting, nlog(n)"
 		}
 	}
 ]
