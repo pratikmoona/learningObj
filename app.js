@@ -8,4 +8,3 @@ var processor = require('./lib/processor/core');
 logger.debug("Reading file from " + argv.p);
 var commands = loader.load(argv.p);
 processor.process(commands);
-logger.debug(JSON.stringify(commands));
