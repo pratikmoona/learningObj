@@ -1,0 +1,28 @@
+START module
+	START params
+		DEFINE name "Binary Search"
+		START attributes
+			ADD text "t1"
+			ADD diagram "d1"
+			ADD text "t2"
+			ADD code "c1"
+			ADD explanation "e1"
+			ADD exercise "ex1"
+		END attributes
+		DEFINE tags "algorithm, search, sorted data, O(log(n))"
+	END params
+END module
+START module
+	START params
+		DEFINE name "Binary Search"
+		START attributes
+			ADD text "t1"
+			ADD diagram "d1"
+			ADD text "t2"
+			ADD code "c1"
+			ADD explanation "e1"
+			ADD exercise "ex1"
+		END attributes
+		DEFINE tags "algorithm, search, sorted data, O(log(n))"
+	END params
+END module

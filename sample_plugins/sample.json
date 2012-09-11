@@ -22,12 +22,12 @@
 			"name": "Linear Search",
 			"attributes":[
 				{"text": "t1"},
-				{"text":"t1"},
-				{"diagram":"d1"},
-				{"text":"t2"},
-				{"code":"c1"},
-				{"explanation":"e1"},
-				{"excercise":"ex1"}
+				{"text": "t1"},
+				{"diagram": "d1"},
+				{"text": "t2"},
+				{"code": "c1"},
+				{"explanation": "e1"},
+				{"excercise": "ex1"}
 			],
 			"tags": "algorithm, search, O(n)"
 		}
@@ -38,8 +38,8 @@
 			"type": "course",
 			"name": "Search Algorithms",
 			"attributes":[
-				{"module": "Linear Search"},
-				{"module": "Binary Search"}
+				{"module": "Linear Search", "dependency": "None"},
+				{"module": "Binary Search", "dependency": "Linear Search"}
 			],
 			"tags": "algorithm, sorting, O(nlog(n))"
 		}
