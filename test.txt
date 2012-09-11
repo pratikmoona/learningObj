@@ -14,7 +14,7 @@ START module
 END module
 START module
 	START params
-		DEFINE name "Binary Search"
+		DEFINE name "Linear Search"
 		START attributes
 			ADD text "t1"
 			ADD diagram "d1"
@@ -23,6 +23,17 @@ START module
 			ADD explanation "e1"
 			ADD exercise "ex1"
 		END attributes
-		DEFINE tags "algorithm, search, sorted data, O(log(n))"
+		DEFINE tags "algorithm, search, O(n)"
 	END params
 END module
+START course
+	START params
+		DEFINE name "Search Algorithms"
+		START attributes
+			ADD module "Binary Search"
+			ADD dependency "Linear Search"
+			ADD module "Linear Search"
+		END attributes
+		DEFINE tags "algorithms, search"
+	END params
+END course

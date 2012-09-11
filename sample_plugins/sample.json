@@ -38,10 +38,11 @@
 			"type": "course",
 			"name": "Search Algorithms",
 			"attributes":[
-				{"module": "Linear Search", "dependency": "None"},
-				{"module": "Binary Search", "dependency": "Linear Search"}
+				{"module": "Linear Search"},
+				{"module": "Binary Search"}
+				{"dependency": "Linear Search"}
 			],
-			"tags": "algorithm, sorting, O(nlog(n))"
+			"tags": "algorithm, search"
 		}
 	}
 ]
