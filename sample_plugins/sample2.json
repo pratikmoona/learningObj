@@ -1,0 +1,46 @@
+[
+	{
+		"params":{
+			"attributes": [
+				{"text": "t1"}, 
+				{"diagram": "d1"}, 
+				{"text": "t2"}, 
+				{"code": "c1"}, 
+				{"explanation": "e1"}, 
+				{"exercise": "ex1"}
+			], 
+		"type": "module", 
+		"name": "Binary Search", 
+		"tags": "algorithm, search, sorted data, O(log(n))"
+		}, 
+		"name": "add"
+	}, 
+	{
+		"params": {
+			"attributes": [
+				{"text": "t1"}, 
+				{"diagram": "d1"}, 
+				{"text": "t2"}, 
+				{"code": "c1"}, 
+				{"explanation": "e1"}, 
+				{"exercise": "ex1"}
+			], 
+		"type": "module", 
+		"name": "Linear Search", 
+		"tags": "algorithm, search, O(n)"
+		}, 
+		"name": "add"
+	}, 
+	{
+		"params": {
+			"attributes": [
+				{"module": "Binary Search"}, 
+				{"dependency": "Linear Search"}, 
+				{"module": "Linear Search"}
+			], 
+			"type": "course", 
+			"name": "Search Algorithms", "tags": "algorithms, search"
+		}, 
+	"name": "add"
+	}
+]

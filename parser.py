@@ -67,7 +67,6 @@ def main():
 	p = parser()
 	for command in fileinput.input():
 		try:
-			print command.strip()
 			p.parse(command.strip())
 		except:
 			print "Error in parsing:", command
