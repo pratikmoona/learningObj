@@ -1,0 +1,50 @@
+This is a documentation of the DSL used for the project "Learning Object Management System". An example usage of all the commands here is available in the test.txt file in the project's home folder. LINK: [https://github.com/pratikmoona/learningObj].
+Stucture: The documentation lists all the possible commands in the languages, followed by a brief description and usage syntax. This followed by a list of  keywords that can be attached to the commands in same format. Next is the list of Parameters that should be defined for every object. And At last is the list of attributes(learning content) that can be given to a module or a course object.
+
+List of Commands:
+START: defines the beginning of a command. Each START command must have a corresponding END command with the same keyword as the START command.
+	Usage: START [Keyword]
+DEFINE: define parameters of a course object or a module object. It is used to add the properties like name, tags, dependencies, forwardlink of the object
+	Usage: DEFINE [Parameter]
+ADD: adds various attributes to both course objects and module objects. You can add as many attributes as you want, but they should be in order for a learning object or course. Eg. there might be two exercise attributes to the same module. For an example usage see the test.txt file in home folder of the project.
+	Usage: ADD [Attribute]
+END: defines the end of a command. There must be a previous START command with the same keyword as the END command.
+	Usage: END [Keyword]
+
+List of Keywords (Common to both course and modules):
+module/course: defines the start of a course or a module when used with START command.
+	Usage: START module, START course, END module, END course.
+params: defines the beginning of attributes of learning object or the course.
+	Usage: START params, END params
+attributes: defines the beginning of attributes definition part of an object.
+	Usage: START attributes, END attributes
+
+List of Parameters:
+name: when used with DEFINE command, defines the "name" attribute of module and course objects.
+	Usage: DEFINE name "[name]"
+tags: when used with DEFINE command, defines the "tags" attribute of module and course objects.
+	Usage: DEFINE tags "[tags]" (The given tags should be commma separated and in quotes)
+
+List of Attributes (course):
+module: adds a module to the course object whose forwardlink and dependency atrributes can be defined. Must be immediately followed by all of the module's forward links and dependendies.
+	Usage: ADD module "[module_name]"
+dependency: add a dependency link to the last module added to the course. A dependency is a module which must be completed by a student before attempting this module. Use a separate ADD command for each dependency.
+	Usage: ADD dependency "[module_name]"
+forwardlink: add a forward link to the last module added to the course. A forward link is all the suggested modules which can be done after this module has been finished. Use a separate ADD command for each forward link.
+	Usage: ADD forwardlink "[module_name]"
+
+LIST of Attributes (module):
+(All these attributes are optional and also they can be added any number of times for a particular object. eg. an object amy have multiple exercises,  multiple diagrams, multiple code fragments(in different programming languages) etc.) . The order of defining the attributes is important though.
+text: add a text paragraph for the module here. There can be multiple paragraphs.
+	Usage: ADD text "[value]"
+diagram: give the filename of the image file contaning the diagram
+	Usage: ADD diagram "[filename]"
+code: give the filename of the file containing the code
+	Usage: ADD code "[filename]"
+explanation: give the explanation of exercise or of text
+	Usage: ADD explanation "[filename]"
+exercise: add an exercise to the module. The format of exercises is not defined for now. The exercises should be in a consistent format.
+	Usage: ADD exercise "[filename]"
+
+//Note that the list of attributes might be incomplete and some attributes that are needed might be missing. For now you can add any attribute you need, to the course or module. Just follow the grammar ADD [attribute name] "[attribute value]"
+
