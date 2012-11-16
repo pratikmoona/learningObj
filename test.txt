@@ -32,8 +32,10 @@ START course
 		START attributes
 			ADD module "Linear Search" 
 			ADD module "Binary Search"
+			START links
 				ADD dependency "Linear Search"
-				ADD forwardlink "Sorting"
+				ADD suggestion "Sorting"
+			END links
 		END attributes
 		DEFINE tags "algorithms, search"
 	END params

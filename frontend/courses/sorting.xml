@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="course.xsl"?>
+<course>
+	<title>Sorting Algorithms</title>
+	<modules>
+		<module>
+			<title>Quicksort</title>
+			<link>../modules/quicksort.xml</link>
+		</module>
+	</modules>
+</course>
