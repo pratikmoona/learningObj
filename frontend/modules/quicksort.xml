@@ -17,8 +17,8 @@
 			<data>Quicksort is a comparison sort and, in efficient implementations, is not a stable sort.</data>
 		</attribute>
 		<attribute>
-			<type>youtube</type>
-			<data><iframe width="420" height="315" src="http://www.youtube.com/embed/y_G9BkAm6B8" frameborder="0" /></data>
+			<type>video</type>
+			<data>quicksort.avi</data>
 		</attribute>
 	</attributes>
 </module>

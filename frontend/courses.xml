@@ -5,4 +5,8 @@
 		<title>Sorting Algorithms</title>
 		<link>courses/sorting.xml</link>
 	</course>
+	<course>
+		<title>Dummy Course</title>
+		<link>courses/dummy.xml</link>
+	</course>
 </courses>

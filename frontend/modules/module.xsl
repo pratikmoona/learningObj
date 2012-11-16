@@ -11,8 +11,10 @@
 			<xsl:if test="type='image'">
 				<center><img><xsl:attribute name="src"><xsl:value-of select="data" /></xsl:attribute></img></center>
 			</xsl:if>
-			<xsl:if test="type='youtube'">
-				<xsl:value-of select="data" />
+			<xsl:if test="type='video'">
+				<video width="320" height="240" controls="controls">
+					<source><xsl:attribute name="src"><xsl:value-of select="data" /></xsl:attribute></source>
+				</video>
 			</xsl:if>
 		</xsl:for-each>
 </body>
